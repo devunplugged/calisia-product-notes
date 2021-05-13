@@ -18,16 +18,40 @@ class renderer{
         self::render($template, array("textarea_input"=>$textarea));
     }
 
-    public static function render_product_form($notes, $nonce, $post){//, $user
+    public static function render_product_form($notes, $nonce, $post_id){//, $user
         self::render(
             'product-notes',
             array(
                 'notes' => $notes,
                 'nonce' => $nonce,
-                'post'  => $post
+                'post_id'  => $post_id
             )
         );
         self::render_note_textarea('product-notes-textarea');
     }
 
+    public static function insert_before_order_itemmeta($item_id, $item, $product){
+        if(!options::option_on('order_notes'))
+            return;
+
+        if($item->get_type() != 'line_item')
+            return;
+
+        $nonce = wp_create_nonce( 'calisia_delete_product_note_' . $product->get_id() );
+        $notes = data::get_product_notes($product->get_id());
+        self::render(
+            'product-notes',
+            array(
+                'notes' => $notes,
+                'nonce' => $nonce,
+                'post_id'  => $product->get_id()
+            )
+        );
+    }
+
+    public static function metabox_form($post){
+        $nonce = wp_create_nonce( 'calisia_delete_product_note_' . $post->ID );
+        $notes = data::get_product_notes($post->ID);
+        self::render_product_form($notes, $nonce, $post->ID);//, $user
+    }
 }

@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calisia-product-notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-13 12:27+0000\n"
+"PO-Revision-Date: 2021-05-13 12:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polski\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: calisia-product-notes"
+
+#: src/renderer.php:13
+msgid "Add comment:"
+msgstr "Dodaj notatkę:"
+
+#. Name of the plugin
+msgid "calisia-product-notes"
+msgstr "calisia-product-notes"
+
+#: templates/product-notes.php:13
+msgid "Delete note"
+msgstr "Usuń notkę"
+
+#: src/settings.php:15
+msgid "Display Settings"
+msgstr "Opcje Wyświetlania"
+
+#: src/settings.php:18
+msgid "Edit order page"
+msgstr "Strona edycji zamówienia"
+
+#: src/settings.php:17
+msgid ""
+"Frontend product page (only for roles: administrator, shop_manager, worker)"
+msgstr "Strona produktu (tylko dla ról: administrator, shop_manager, worker)"
+
+#: templates/settings-section-text.php:1
+msgid "Here you can choose where to display product notes"
+msgstr "Tu możesz wybrać gdzie wyświetlane będą notatki do produktów."
+
+#: src/product-page.php:7
+msgid "Internal Notes"
+msgstr "Notatki wewnętrzne"
+
+#: src/tabs.php:8
+#, php-format
+msgid "Internal Notes (%1$s)"
+msgstr "Notatki wewnętrzne (%1$s)"
+
+#: templates/product-notes-frontend.php:18
+msgid "No notes for that product yet"
+msgstr "Brak notatek do tego produktu"
+
+#: src/metabox.php:6
+msgid "Notes: Product"
+msgstr "Notatki: Produkt"
+
+#: src/settings.php:34 src/settings.php:51
+msgid "Off"
+msgstr "Wyłączone"
+
+#: src/settings.php:33 src/settings.php:50
+msgid "On"
+msgstr "Włączone"
+
+#: src/settings.php:6
+msgid "Product Notes"
+msgstr "Notatki do Produktów"
+
+#: templates/settings-form.php:1
+msgid "Product Notes Settings"
+msgstr "Ustawienia Notatki do Produktów"
+
+#: templates/settings-form.php:7
+msgid "Save"
+msgstr "Zapisz"
+
+#. Author of the plugin
+msgid "Tomasz Boroń"
+msgstr "Tomasz Boroń"
+
+#: src/renderer.php:14
+msgid "Your Comment"
+msgstr "Twoja notatka"

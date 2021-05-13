@@ -3,8 +3,8 @@ jQuery( document ).on( "click", ".calisia-delete-product-note-button", function(
     if (r == false){
         return;
     }
-    let calisia_nonce = jQuery( "#calisia-nonce" ).val();
-    let calisia_post_id = jQuery( "#calisia-post-id" ).val();
+    let calisia_nonce = jQuery( "#calisia-product-note-nonce" ).val();
+    let calisia_post_id = jQuery( "#calisia-product-note-post-id" ).val();
     jQuery.ajax({
         url: "admin-ajax.php", // this is the object instantiated in wp_localize_script function
         type: 'POST',

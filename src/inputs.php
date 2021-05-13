@@ -14,4 +14,22 @@ class inputs{
 
         echo $ta;
     }
+
+    public static function select($options,  $output = false){
+        $select = '<select name="'.$options['name'].'" id="'.$options['id'].'" class="'.$options['class'].'">';
+        foreach($options['options'] as $key => $value){
+            $select .= '<option value="'.$value.'" ';
+            if($options['value'] == $value)
+                $select .= 'selected';
+            $select .= '>';
+            $select .= $key;
+            $select .= '</option>';
+        } 
+        $select .= '</select>';
+
+        if(!$output)
+            return $select;
+
+        echo $select;
+    }
 }

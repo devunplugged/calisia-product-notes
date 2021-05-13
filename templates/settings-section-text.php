@@ -1,0 +1,1 @@
+<p><?php _e('Here you can choose where to display product notes', 'calisia-product-notes'); ?></p>
