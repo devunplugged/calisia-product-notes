@@ -1,0 +1,35 @@
+.calisia-product-note{
+    background: #cad1df;
+    padding:10px;
+    position: relative;
+}
+.calisia-product-note::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: #cad1df transparent;
+}
+.calisia-product-note-info-bar{
+    padding:10px;
+    color: gray;
+    font-size: 11px;
+}
+.calisia-product-note-info-bar a{
+    cursor: pointer;
+}
+.calisia-product-note-info{
+    border-bottom: 1px dotted #999;
+}
+.calisia-product-notes{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.w-100{
+    width: 100%;
+}
