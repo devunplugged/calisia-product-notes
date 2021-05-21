@@ -2,7 +2,7 @@
 namespace calisia_product_notes;
 
 class install{
-    private static $db_version = '1.1';
+    private static $db_version = '1.2';
     
     public static function update_check(){
         //global $calisia_product_notes_db_version;
