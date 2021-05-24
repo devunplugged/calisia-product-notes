@@ -5,6 +5,9 @@ class saver{
 
     public static function save_product_note($post_id, $post){
 
+        if(!isset($_POST['_calisia_product_note']))
+            return;
+
         if($_POST['_calisia_product_note'] == '')
             return;
 
