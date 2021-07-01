@@ -1,6 +1,10 @@
 <?php
 namespace calisia_product_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class data{
     public static function get_product_notes($product_id){
         global $wpdb;

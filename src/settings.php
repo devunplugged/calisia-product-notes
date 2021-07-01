@@ -1,6 +1,10 @@
 <?php
 namespace calisia_product_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class settings{
     public static function add_settings_page() {
         add_options_page( 'Example plugin page', __( 'Product Notes', 'calisia-product-notes' ), 'manage_options', 'calisia-product-notes', 'calisia_product_notes\settings::render_plugin_settings_page' );

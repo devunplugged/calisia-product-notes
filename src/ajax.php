@@ -1,6 +1,10 @@
 <?php
 namespace calisia_product_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class ajax{
     public static function delete_note(){
 

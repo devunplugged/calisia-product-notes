@@ -5,6 +5,11 @@
  * Text Domain: calisia-product-notes
  * Domain Path: /languages
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 require_once __DIR__ . '/src/install.php';
 require_once __DIR__ . '/src/data.php';
 require_once __DIR__ . '/src/inputs.php';

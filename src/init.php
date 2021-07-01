@@ -1,6 +1,10 @@
 <?php
 namespace calisia_product_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class init{
     public static function frontend_notes(){
         //add notes tab to single product page
